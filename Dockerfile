@@ -68,6 +68,14 @@ RUN cd ~/sdr && \
        make install && \
        ldconfig && \
        cmake ../ -DINSTALL_UDEV_RULES=ON
+      
+      
+# Install aplay
+# RUN apt-get install alsa-base alsa-utils -y
+# Reference https://www.npmjs.com/package/aplay
+
+# Install Vim
+Run apt-get install vim -y
 
 
 # Install GQRX

@@ -66,7 +66,8 @@ RUN cd ~/sdr && \
        cmake ../ &&\
        make && \
        make install && \
-       ldconfig
+       ldconfig && \
+       cmake ../ -DINSTALL_UDEV_RULES=ON
 
 
 # Install GQRX

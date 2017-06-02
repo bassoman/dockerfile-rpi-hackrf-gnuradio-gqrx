@@ -57,6 +57,18 @@ RUN mkdir ~/sdr && \
           ldconfig
 
 
+# Install RTL-SDR tools
+RUN cd ~/sdr && \
+       git clone git://git.osmocom.org/rtl-sdr.git && \
+       cd rtl-sdr && \
+       mkdir build && \
+       cd build && \
+       cmake ../ &&\
+       make && \
+       make install && \
+       ldconfig
+
+
 # Install GQRX
 RUN apt-get install -y \
                     qt5-default \

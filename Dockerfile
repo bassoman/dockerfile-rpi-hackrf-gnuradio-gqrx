@@ -9,7 +9,7 @@
 #
 # Run GQRX with the command: ./gqrx
 #
-# Run container with the command: docker run -it --privileged --name hackrf -v /dev/bus/usb:/dev/bus/usb barrymarkgee/rpi-hackrf-gnu-radio-gqrx
+# Run container with the command: docker run -it --privileged --name hackrf -v /dev/bus/usb:/dev/bus/usb barrymarkgee/rpi-hackrf-gnuradio-gqrx
 
 FROM armhf/ubuntu
 
